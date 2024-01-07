@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --primary-bg: #392467;
   --primary-text: #FFD1E3;
+  --secondary-bg: #A367B1;
 
 }
 
@@ -26,11 +27,28 @@ body {
   transition: border-color 0.25s;
 }
 
-.primary-button {
-  background: var(--primary-bg);
+
+
+.secondary-button {
+  background: var(--secondary-bg);
   color: var(--primary-text);
 }
 
 .button-base:hover {
   border-color: #646cff;
+}
+
+.input {
+  padding: 13px 15px;
+  border: 1px solid var(--primary-bg);
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--primary-bg);
+  font-style: italic;
+}
+
+input::placeholder {
+  color: var(--primary-bg);
+  font-style: italic;
 }

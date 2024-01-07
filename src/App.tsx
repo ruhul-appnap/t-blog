@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      <Input type='number' />
-      <Button variant='primary' className='width-100'>submit</Button>
+      <Input placeholder='Enter Name' />
+      {/* <Button variant='secondary' className='width-100'>submit</Button> */}
     </>
   )
 }
