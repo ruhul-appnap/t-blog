@@ -1,7 +1,7 @@
 import React from 'react'
 
 type ButtonProps = {
-  variant: "primary" | "secondary"
+  variant?: "primary" | "secondary"
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 
