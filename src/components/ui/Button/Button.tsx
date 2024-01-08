@@ -13,7 +13,10 @@ const buttonVariant = {
 function Button(props: ButtonProps) {
   const { children, className, variant } = props;
 
-  let buttonType = buttonVariant[variant] ? buttonVariant[variant] : "button-base"
+  let buttonType = '';
+  if (variant) {
+    buttonType = buttonVariant[variant] ? buttonVariant[variant] : "button-base"
+  }
   if (className) buttonType += ' ' + className
 
   return (
