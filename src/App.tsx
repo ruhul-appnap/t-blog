@@ -7,10 +7,10 @@ type FromData = {
   name: string,
   email: string
 }
-import { HandleType } from './components/action/Form/Form'
+import { FormMethodType } from './components/action/Form'
 
 function App() {
-  const ref = useRef<HandleType>(null)
+  const ref = useRef<FormMethodType>(null)
 
   const handleFormSave = (data: unknown) => {
     const extractData = data as FromData;

@@ -4,11 +4,11 @@ type FormProps = {
   onSave: (data: unknown) => void
 } & React.ComponentPropsWithoutRef<'form'>
 
-export type HandleType = {
+export type FormMethodType = {
   clear: () => void;
 }
 
-const Form = forwardRef<HandleType, FormProps>(({ onSave, children, ...props }, ref) => {
+const Form = forwardRef<FormMethodType, FormProps>(({ onSave, children, ...props }, ref) => {
   const formRef = useRef<HTMLFormElement>(null)
 
   useImperativeHandle(ref, () => {
